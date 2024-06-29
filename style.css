@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8d9b4; 
+}
+img {
+    max-width: max-content;
+    margin: 0 auto;
+}
+.product img {
+    max-width: 300px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    /*background: linear-gradient(
+        90deg,
+        rgba(47,28,42,1) 0%,
+        rgba(45,54,61,1) 50%,
+        rgba(19,41,65,1) 100%
+    );*/
+    background:rgb(255, 255, 255)
+}
+
+.menu {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(50, 29, 135);
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+.menu .navbar ul li a {
+    font-size: 17px;
+    padding:  20px;
+    color:rgb(7, 80, 5)
+    text-transform: uppercase;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color: rgb(104, 157, 118);
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+
+}
+.menu.label {
+    cursor: pointer;
+    display: none;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur (10px);
+    top: 100px;
+    z-index: 1;
+    background-color: #a0a0a076;
+    padding: 20px;
+    min-width: 400px;
+
+}
+table {
+    width: 100px;
+}
+th, td {
+    color:rgb(11, 21, 21)
+}
+.borrar {
+    background-color: rgb(241, 107, 107);
+    border-radius: 40px;
+    padding: 5px 10px;
+    color: rgb(240, 240, 233);
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 8px;
+
+}
+.header-txt {
+    text-align: center;
+    padding: 22% 0;
+    flex: 1;
+
+}
+.header-txt h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    color: rgb(152, 241, 26);
+    text-transform: lowercase;
+}
+.header-txt p {
+    font-size: 16px;
+    color:rgb(10, 7, 4);
+    text-transform: capitalize;
+    margin-bottom:35px;
+
+}
+.header-txt img {
+    width: 700px;
+    display: block;
+}
+.btn-1, .btn-2 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: rgb(45, 79, 227);
+    color: rgb(254, 254, 254);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    margin-top: 45px;
+    border-radius: 20px;
+    text-transform: uppercase;
+   
+
+}
+.about {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img img {
+    width: 400px;
+    border-radius: 50px;
+    
+    
+}
+.about-txt {
+    flex-basis: 50%;
+}
+h2 {
+    color: rgb(63, 0, 211);
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 15px;
+
+}
+p{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.products {
+    padding: 0 0 200px 0;
+    text-align: center;
+
+}
+.product img	{
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+    border-radius: 30px;
+}
+
+.products h2 {
+    margin-bottom: 50px;
+
+}
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+h3 {
+    color: rgb(6, 184, 142);
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 10px; 
+}
+.precio {
+    color: rgb(15, 15, 15);
+    font-weight: 800;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: largere;
+
+}
+.btn-2 {
+    margin: 0;
+    padding: 8px 35px;
+}
+.footer {
+    border-top: 3px solid #11111165;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+
+}
+.link h3 {
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.link a {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.link a:hover {
+    color: burlywood;
+
+} 
+@media (max-width:991px) {
+        .menu {
+        padding: 20px;
+        }
+        .menu label {
+        display: initial;
+        }
+        .menu.label {
+            display: initial;
+        }
+        .menu.navbar {
+            position: relative;
+            top: 100px;
+            left: 0;
+            right: 0;
+            background-color: black;
+            display: none;
+
+        }
+        .menu .navbar ul li {
+            width: 100%;
+        }
+        .menu:checked ~ .navbar {
+            display: initial;
+        }
+
+        .logo {
+            display: none;
+
+        }
+        .submenu:hover #carrito {
+            min-width: 340%;
+        }
+        .header {
+            min-height: 0vh;
+            padding: 100px 30px;
+        }
+        
+        .header-txt {
+            text-align: center;
+
+        }
+        .header-txt h1 {
+            font-size: 90px;
+            line-height: 1;
+        }
+        .about {
+            padding: 30px;
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-img {
+            order: 2;
+
+        }
+        .about-img img {
+            width: 250px;
+
+        }
+        .about-txt {
+            margin-bottom: 25px;
+        }
+        .products {
+            padding: 30px;
+
+        }.products-content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        
+        }
+        .footer {
+            padding: 30px;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+.services-content {
+    text-align: center;
+}
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.services-content p {
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    margin-bottom: 10px;
+    padding: 0 100px;
+}
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;    
+    background-color: rgb(192, 160, 118);
+}
+.services-1 {   
+    
+    padding:  10px;
+}
+.services-1 img {
+    width: 150px;
+    margin-bottom: 35px;
+    
+}
+.services-1 h3 {
+    color: #520bc4;
+    font-size: 25px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    margin-bottom: 15px;
+
+}
